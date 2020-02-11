@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="text"
+            type="com.example.tictoctoe.model.Datax" />
+    </data>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TableRow android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt1"
+                android:layout_height="100dp"
+                android:text="@{text.x.get(0)}" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt2"
+                android:layout_height="100dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt3"
+                android:layout_height="100dp" />
+        </TableRow>
+
+        <TableRow android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt4"
+                android:layout_height="100dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt5"
+                android:layout_height="100dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt6"
+                android:layout_height="100dp" />
+        </TableRow>
+
+        <TableRow android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt7"
+                android:layout_height="100dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt8"
+                android:layout_height="100dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt9"
+                android:layout_height="100dp" />
+        </TableRow>
+    </TableLayout>
+</layout>
